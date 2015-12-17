@@ -1,0 +1,15 @@
+{
+	"ImportPath": "hs_timer",
+	"GoVersion": "go1.5",
+	"Deps": [
+		{
+			"ImportPath": "github.com/gin-gonic/gin",
+			"Comment": "v1.0rc1-138-gf6b0b5c",
+			"Rev": "f6b0b5c04e78980b0a6fec09f26ba7485347ea58"
+		},
+		{
+			"ImportPath": "github.com/julienschmidt/httprouter",
+			"Rev": "b55664b9e92004aebb7f19a19a9d06271f3a41fc"
+		}
+	]
+}
