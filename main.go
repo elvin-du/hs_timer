@@ -16,14 +16,14 @@ func main() {
 	})
 	router.GET("/convert", Convert)
 
-	router.Run(":8080")
+	router.Run(":10002")
 }
 
 func Convert(ctx *gin.Context) {
-	tStr := ctx.Query("t")
+	tStr := ctx.Request.FormValue("t")
 	t, err := strconv.ParseInt(tStr, 10, 64)
 	if nil != err {
-		ctx.Error(err)
+		ctx.Error(err,err.Error())
 	}
 
 	ctx.HTML(200, "index.html", gin.H{"t": I2Time(t)})
